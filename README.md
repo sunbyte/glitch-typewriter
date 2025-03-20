@@ -67,6 +67,16 @@ The component accepts the following props:
   ]
   ```
 
+#### `color` (optional)
+
+- **Type**: `string`
+- **Default**: `black`
+- **Description**: The font color of the text. Use values like `"white"`, `"#FF0000"`, etc.
+
+  ```tsx
+  color="white"
+  ```
+
 #### `fontSize` (optional)
 
 - **Type**: `number`
