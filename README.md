@@ -7,6 +7,7 @@ A dynamic and futuristic **glitch typewriter** effect component for React. It di
 - **Customizable fonts**: Adjust font size, weight, and more.
 - **Customizable cursor**: Control cursor width, height, and color.
 - **Multiple slogans**: Cycle through an array of text or slogans.
+- **Inspired by**: [a link]https://thehackernews.com
 
 ## Installation
 
