@@ -74,7 +74,7 @@ const GlitchTypewriter = ({
           sloganElement.dataset.text = displayText
           currentIndex.current = (currentIndex.current + 1) % slogans.length
         }
-      }, typeSpeed ? typeSpeed : 150)
+      }, typeSpeed ? typeSpeed : 15)
     }
 
     typewriterEffect()
