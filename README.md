@@ -1,12 +1,6 @@
 # glitch-typewriter
+
 A dynamic and futuristic **glitch typewriter** effect component for React. It displays text with a typewriter effect where characters appear one by one, flickering with glitchy distortions. This component is highly customizable and can be used to display rotating slogans or any text with glitchy animations.
-
-## Features
-
-- **Glitch typewriter effect**: Characters appear one by one with a glitch effect.
-- **Customizable fonts**: Adjust font size, weight, and more.
-- **Customizable cursor**: Control cursor width, height, and color.
-- **Multiple slogans**: Cycle through an array of text or slogans.
 
 ## Installation
 
