@@ -4,7 +4,7 @@ A dynamic and futuristic **glitch typewriter** effect component for React. It di
 
 ## Installation
 
-To use the Glitch Typewriter component in your project, follow these steps:
+To use the glitch typewriter component in your project, follow these steps:
 
 1. Download the `GlitchTypewriter.tsx` and `GlitchTypewriter.css` files from this repository.
    
