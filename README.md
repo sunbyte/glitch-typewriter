@@ -1,16 +1,12 @@
 # glitch-typewriter
 React component displays text with a glitch typewriter effect
 
----
-
 ## Features
 
-- **Glitch Typewriter Effect**: Characters appear one by one with a glitch effect.
-- **Customizable Fonts**: Adjust font size, weight, and more.
-- **Customizable Cursor**: Control cursor width, height, and color.
-- **Multiple Slogans**: Cycle through an array of text or slogans.
-
----
+- **Glitch typewriter effect**: Characters appear one by one with a glitch effect.
+- **Customizable fonts**: Adjust font size, weight, and more.
+- **Customizable cursor**: Control cursor width, height, and color.
+- **Multiple slogans**: Cycle through an array of text or slogans.
 
 ## Installation
 
@@ -26,8 +22,6 @@ To use the Glitch Typewriter component in your project, follow these steps:
 import GlitchTypewriter from './components/GlitchTypewriter'
 import './components/GlitchTypewriter.css'  // Make sure to import the CSS file
 ```
-
----
 
 ## Usage
 
@@ -64,7 +58,7 @@ The component accepts the following props:
 
 - **Type**: `string[]`
 - **Description**: An array of strings that will be displayed one by one in a typewriter effect. When the first string finishes, the second one will start, and so on.
-- **Example**:
+
   ```tsx
   const slogans = [
     "The future is now.",
@@ -77,7 +71,7 @@ The component accepts the following props:
 - **Type**: `number`
 - **Default**: `18`
 - **Description**: The font size of the text. Set the size according to your design needs.
-- **Example**:
+
   ```tsx
   fontSize={24}
   ```
@@ -87,7 +81,7 @@ The component accepts the following props:
 - **Type**: `string`
 - **Default**: `"normal"`
 - **Description**: The font weight of the text. Use values like `"normal"`, `"bold"`, `"lighter"`, etc.
-- **Example**:
+
   ```tsx
   fontWeight="bold"
   ```
@@ -97,7 +91,7 @@ The component accepts the following props:
 - **Type**: `number`
 - **Default**: `4`
 - **Description**: The width of the blinking cursor.
-- **Example**:
+
   ```tsx
   cursorWidth={6}
   ```
@@ -107,7 +101,7 @@ The component accepts the following props:
 - **Type**: `number`
 - **Default**: `18`
 - **Description**: The height of the blinking cursor.
-- **Example**:
+  
   ```tsx
   cursorHeight={20}
   ```
@@ -117,7 +111,7 @@ The component accepts the following props:
 - **Type**: `string`
 - **Default**: `#9997FF`
 - **Description**: The background color of the blinking cursor. Use any valid CSS color value.
-- **Example**:
+
   ```tsx
   cursorBackgroundColor="#FF5733"
   ```
