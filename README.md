@@ -37,6 +37,7 @@ const App = () => {
     <div>
       <GlitchTypewriter
          slogans={slogans}
+         color="black"
          fontSize={24}
          fontWeight="bold"
          showCursor={true}
