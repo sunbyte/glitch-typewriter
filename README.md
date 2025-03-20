@@ -14,7 +14,6 @@ To use the Glitch Typewriter component in your project, follow these steps:
 
 ```tsx
 import GlitchTypewriter from './components/GlitchTypewriter'
-import './components/GlitchTypewriter.css'  // Make sure to import the CSS file
 ```
 
 ## Usage
