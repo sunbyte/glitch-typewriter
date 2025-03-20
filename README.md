@@ -76,7 +76,7 @@ The component accepts the following props:
 - **Description**: Delay time between slogans in milliseconds.
 
   ```tsx
-  color="white"
+  delay="5000"
   ```
 
 #### `color` (optional)
