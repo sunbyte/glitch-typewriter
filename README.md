@@ -34,7 +34,7 @@ const App = () => {
   ]
 
   return (
-    <div className="App">
+    <div>
       <GlitchTypewriter
          slogans={slogans}
          fontSize={24}
