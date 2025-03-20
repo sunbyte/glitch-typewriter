@@ -79,6 +79,16 @@ The component accepts the following props:
   delay="5000"
   ```
 
+#### `typeSpeed` (optional)
+
+- **Type**: `number`
+- **Default**: `15`
+- **Description**: Type write effect speed in milliseconds.
+
+  ```tsx
+  delay="30"
+  ```
+
 #### `color` (optional)
 
 - **Type**: `string`
