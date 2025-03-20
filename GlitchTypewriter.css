@@ -20,16 +20,16 @@
   left: 2px;
   text-shadow: -2px 0 #ff00c1;
   clip: rect(44px, 450px, 56px, 0);
-  animation: 5s linear infinite alternate-reverse glitch-anim;
+  animation: 5s linear infinite alternate-reverse glitch-before;
 }
 
 .glitch::after {
   left: -2px;
   text-shadow: -2px 0 #00fff2, 2px 2px #ff00c1;
-  animation: 1s linear infinite alternate-reverse glitch-anim2;
+  animation: 1s linear infinite alternate-reverse glitch-after;
 }
 
-@keyframes glitch-anim {
+@keyframes glitch-before {
   0% {
     clip: rect(10px, 9999px, 30px, 0);
     transform: skew(0.5deg);
@@ -116,7 +116,7 @@
   }
 }
 
-@keyframes glitch-anim2 {
+@keyframes glitch-after {
   0% {
     clip: rect(65px, 9999px, 33px, 0);
   }
