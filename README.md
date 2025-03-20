@@ -42,7 +42,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <GlitchTypewriter slogans={slogans} fontSize={24} fontWeight="bold" />
+      <GlitchTypewriter slogans={slogans} fontSize={24} fontWeight="bold" showCursor={true} />
     </div>
   )
 }
@@ -84,6 +84,16 @@ The component accepts the following props:
 
   ```tsx
   fontWeight="bold"
+  ```
+  
+#### `showCursor` (optional)
+
+- **Type**: `boolean`
+- **Default**: `false`
+- **Description**: Blinking cursor.
+
+  ```tsx
+  showCursor={true}
   ```
 
 #### `cursorWidth` (optional)
