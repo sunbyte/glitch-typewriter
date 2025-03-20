@@ -168,7 +168,7 @@ The component accepts the following props:
 - **Description**: Cursos blink speed in milliseconds.
 
   ```tsx
-  cursorBackgroundColor="green"
+  cursorBlinkSpeedr={0.5}
   ```
   
 ## Inspired by
