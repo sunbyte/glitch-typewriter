@@ -172,7 +172,6 @@
 .cursor {
   display: inline-block;
   margin-left: 4px;
-  animation: 0.7s infinite blink;
   vertical-align: middle;
 }
 
