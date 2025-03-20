@@ -4,7 +4,7 @@ A dynamic and futuristic **glitch typewriter** effect component for React. It di
 
 ## Demo
 
-![Example GIF](example.gif)
+![Example GIF](/example.gif)
 
 ## Installation
 
