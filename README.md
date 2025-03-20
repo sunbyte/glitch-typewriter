@@ -8,7 +8,7 @@ To use the Glitch Typewriter component in your project, follow these steps:
 
 1. Download the `GlitchTypewriter.tsx` and `GlitchTypewriter.css` files from this repository.
    
-2. Place these files into your project's `/components/glitch-typewriter` directory or any other directory where you store your React components.
+2. Place these files into your project's `/components/glitch-typewriter/` directory or any other directory where you store your React components.
 
 3. Import the component into your React project:
 
