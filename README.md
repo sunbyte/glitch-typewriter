@@ -6,11 +6,11 @@ A dynamic and futuristic **glitch typewriter** effect component for React. It di
 
 To use the glitch typewriter component in your project, follow these steps:
 
--- Download the `GlitchTypewriter.tsx` and `GlitchTypewriter.css` files from this repository.
+1. Download the `GlitchTypewriter.tsx` and `GlitchTypewriter.css` files from this repository.
    
--- Place these files into your project's `/components/glitch-typewriter/` directory or any other directory where you store your React components.
+2. Place these files into your project's `/components/glitch-typewriter/` directory or any other directory where you store your React components.
 
--- 3. Import the component into your React project:
+3. Import the component into your React project:
 
 ```tsx
 import GlitchTypewriter from './components/glitch-typewriter/GlitchTypewriter'
