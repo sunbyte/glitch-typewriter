@@ -46,6 +46,7 @@ const App = () => {
          cursorWidth={4}
          cursorHeight={18}
          cursorBackgroundColor="aqua"
+         cursorBlinkSpeed={0.7}
       />
     </div>
   )
@@ -155,6 +156,16 @@ The component accepts the following props:
 - **Type**: `string`
 - **Default**: `aqua`
 - **Description**: The background color of the blinking cursor. Use any valid CSS color value.
+
+  ```tsx
+  cursorBackgroundColor="green"
+  ```
+
+#### `cursorBlinkSpeedr` (optional)
+
+- **Type**: `number`
+- **Default**: `0.7`
+- **Description**: Cursos blink speed in milliseconds.
 
   ```tsx
   cursorBackgroundColor="green"
