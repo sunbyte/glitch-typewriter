@@ -42,7 +42,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <GlitchTypewriter slogans={slogans} fontSize={24} fontWeight="bold" showCursor={true} />
+      <GlitchTypewriter
+         slogans={slogans}
+         fontSize={24}
+         fontWeight="bold"
+         showCursor={true}
+         cursorWidth={4}
+         cursorHeight={18}
+         cursorBackgroundColor="#9997FF"
+      />
     </div>
   )
 }
