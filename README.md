@@ -37,6 +37,7 @@ const App = () => {
     <div>
       <GlitchTypewriter
          slogans={slogans}
+         duration={3000}
          color="black"
          fontSize={24}
          fontWeight="bold"
@@ -66,6 +67,16 @@ The component accepts the following props:
     "The future is now.",
     "Create, innovate, repeat."
   ]
+  ```
+
+#### `delay` (optional)
+
+- **Type**: `number`
+- **Default**: `3000`
+- **Description**: Delay time between slogans in milliseconds.
+
+  ```tsx
+  color="white"
   ```
 
 #### `color` (optional)
