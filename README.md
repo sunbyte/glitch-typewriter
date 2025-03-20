@@ -29,7 +29,7 @@ To use the `GlitchTypewriter` component in your React project, follow the exampl
 
 ```tsx
 import React from 'react'
-import GlitchTypewriter from 'glitch-typewriter'
+import GlitchTypewriter from "./components/ui/glitch-typewriter/GlitchTypewriter"
 
 const App = () => {
   const slogans = [
