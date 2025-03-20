@@ -42,7 +42,7 @@ const App = () => {
          color="black"
          fontSize={24}
          fontWeight="bold"
-         showCursor={true}
+         showCursor
          cursorWidth={4}
          cursorHeight={18}
          cursorBackgroundColor="aqua"
@@ -127,7 +127,7 @@ The component accepts the following props:
 - **Description**: Blinking cursor.
 
   ```tsx
-  showCursor={true}
+  showCursor={false}
   ```
 
 #### `cursorWidth` (optional)
