@@ -38,6 +38,7 @@ const App = () => {
       <GlitchTypewriter
          slogans={slogans}
          delay={3000}
+         typeSpeed={15}
          color="black"
          fontSize={24}
          fontWeight="bold"
@@ -86,7 +87,7 @@ The component accepts the following props:
 - **Description**: Type write effect speed in milliseconds.
 
   ```tsx
-  delay="30"
+  typeSpeed="30"
   ```
 
 #### `color` (optional)
