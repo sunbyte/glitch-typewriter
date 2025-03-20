@@ -3,8 +3,10 @@ import "./GlitchTypewriter.css"
 
 interface GlitchTypewriterProps {
   slogans: string[]
+  color?: string
   fontSize?: number
   fontWeight?: string
+  showCursor?: boolean
   cursorWidth?: number
   cursorHeight?: number
   cursorBackgroundColor?: string
@@ -15,8 +17,10 @@ const randomChars =
 
 const GlitchTypewriter = ({
   slogans,
+  color,
   fontSize,
   fontWeight,
+  showCursor,
   cursorWidth,
   cursorHeight,
   cursorBackgroundColor,
@@ -81,22 +85,25 @@ const GlitchTypewriter = ({
         className="slogan glitch"
         data-text={firstSlogan}
         style={{
+          color: color ? color : "black",
           fontSize: fontSize ? fontSize : 18,
           fontWeight: fontWeight ? fontWeight : "normal",
         }}
       >
         {firstSlogan}
       </span>
-      <div
-        className="cursor"
-        style={{
-          width: cursorWidth ? cursorWidth : 4,
-          height: cursorHeight ? cursorHeight : 18,
-          backgroundColor: cursorBackgroundColor
-            ? cursorBackgroundColor
-            : "#9997FF",
-        }}
-      />
+      {showCursor && (
+        <div
+          className="cursor"
+          style={{
+            width: cursorWidth ? cursorWidth : 4,
+            height: cursorHeight ? cursorHeight : 18,
+            backgroundColor: cursorBackgroundColor
+              ? cursorBackgroundColor
+              : "#9997FF",
+          }}
+        />
+      )}
     </div>
   )
 }
