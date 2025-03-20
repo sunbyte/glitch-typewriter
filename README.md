@@ -26,11 +26,11 @@ import GlitchTypewriter from "./components/glitch-typewriter/GlitchTypewriter"
 
 const App = () => {
   const slogans = [
-    "#1 Trusted Cybersecurity News Platform",
-    "Bits, Bytes, and Breaking News",
-    "Decrypting Tomorrow's Threats Today",
-    "sudo apt-get update cyber_news",
-    "Don't Get Pwned, Get Informed",
+    "sudo apt-get update",
+    "shred -u -n 5 secret.txt",
+    "cat /proc/meminfo",
+    "sudo dpkg -i package.deb",
+    "tar -xvf archive.tar",
   ]
 
   return (
