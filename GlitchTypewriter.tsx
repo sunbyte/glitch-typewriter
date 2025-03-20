@@ -1,0 +1,104 @@
+import { useEffect, useRef } from "react"
+import "./GlitchTypewriter.css"
+
+interface GlitchTypewriterProps {
+  slogans: string[]
+  fontSize?: number
+  fontWeight?: string
+  cursorWidth?: number
+  cursorHeight?: number
+  cursorBackgroundColor?: string
+}
+
+const randomChars =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]<>.,;:"
+
+const GlitchTypewriter = ({
+  slogans,
+  fontSize,
+  fontWeight,
+  cursorWidth,
+  cursorHeight,
+  cursorBackgroundColor,
+}: GlitchTypewriterProps) => {
+  const sloganRef = useRef<HTMLSpanElement>(null)
+  const currentIndex = useRef<number>(0)
+
+  useEffect(() => {
+    const sloganElement = sloganRef.current
+    if (!sloganElement) return
+
+    const toggleClass = (
+      element: HTMLElement,
+      className: string,
+      add: boolean
+    ) => {
+      element.classList[add ? "add" : "remove"](className)
+    }
+
+    const getRandomIndex = (max: number) => Math.floor(Math.random() * max)
+
+    const typewriterEffect = () => {
+      if (!sloganElement) return
+      toggleClass(sloganElement, "glitch", false)
+
+      const currentText = slogans[currentIndex.current]
+      const textLength = currentText.length
+      let currentChar = 0
+
+      const interval = setInterval(() => {
+        const displayText = [...currentText]
+          .map((char, index) =>
+            index < currentChar
+              ? char
+              : randomChars[getRandomIndex(randomChars.length)]
+          )
+          .join("")
+
+        sloganElement.textContent = displayText
+        currentChar++
+
+        if (currentChar > textLength) {
+          clearInterval(interval)
+          toggleClass(sloganElement, "glitch", true)
+          sloganElement.dataset.text = displayText
+          currentIndex.current = (currentIndex.current + 1) % slogans.length
+        }
+      }, 15)
+    }
+
+    typewriterEffect()
+    const loop = setInterval(typewriterEffect, 4000)
+    return () => clearInterval(loop)
+  }, [])
+
+  const firstSlogan = slogans.length > 0 ? slogans[0] : ""
+
+  return (
+    <div className="slogan-container">
+      <span
+        ref={sloganRef}
+        className="slogan glitch"
+        data-text={firstSlogan}
+        style={{
+          fontSize: fontSize ? fontSize : 18,
+          fontWeight: fontWeight ? fontWeight : "normal",
+        }}
+      >
+        {firstSlogan}
+      </span>
+      <div
+        className="cursor"
+        style={{
+          width: cursorWidth ? cursorWidth : 4,
+          height: cursorHeight ? cursorHeight : 18,
+          backgroundColor: cursorBackgroundColor
+            ? cursorBackgroundColor
+            : "#9997FF",
+        }}
+      />
+    </div>
+  )
+}
+
+export default GlitchTypewriter
