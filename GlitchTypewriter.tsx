@@ -4,6 +4,7 @@ import "./GlitchTypewriter.css"
 interface GlitchTypewriterProps {
   slogans: string[]
   delay: number
+  typeSpeed: number
   color?: string
   fontSize?: number
   fontWeight?: string
@@ -19,6 +20,7 @@ const randomChars =
 const GlitchTypewriter = ({
   slogans,
   delay,
+  typeSpeed,
   color,
   fontSize,
   fontWeight,
@@ -70,7 +72,7 @@ const GlitchTypewriter = ({
           sloganElement.dataset.text = displayText
           currentIndex.current = (currentIndex.current + 1) % slogans.length
         }
-      }, 15)
+      }, typeSpeed ? typeSpeed : 150)
     }
 
     typewriterEffect()
