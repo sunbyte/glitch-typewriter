@@ -13,7 +13,7 @@ To use the Glitch Typewriter component in your project, follow these steps:
 3. Import the component into your React project:
 
 ```tsx
-import GlitchTypewriter from './components/GlitchTypewriter'
+import GlitchTypewriter from './components/glitch-typewriter/GlitchTypewriter'
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ To use the `GlitchTypewriter` component in your React project, follow the exampl
 
 ```tsx
 import React from 'react'
-import GlitchTypewriter from "./components/ui/glitch-typewriter/GlitchTypewriter"
+import GlitchTypewriter from "./components/glitch-typewriter/GlitchTypewriter"
 
 const App = () => {
   const slogans = [
