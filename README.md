@@ -58,7 +58,7 @@ The component accepts the following props:
 #### `slogans` (required)
 
 - **Type**: `string[]`
-- **Description**: An array of strings that will be displayed one by one in a typewriter effect. When the first string finishes, the second one will start, and so on.
+- **Description**: An array of strings that will be displayed one by one in a typewriter effect.
 
   ```tsx
   const slogans = [
