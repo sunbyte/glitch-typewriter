@@ -100,7 +100,7 @@ const GlitchTypewriter = ({
             height: cursorHeight ? cursorHeight : 18,
             backgroundColor: cursorBackgroundColor
               ? cursorBackgroundColor
-              : "#9997FF",
+              : "aqua",
           }}
         />
       )}
