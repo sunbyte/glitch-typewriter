@@ -12,6 +12,7 @@ interface GlitchTypewriterProps {
   cursorWidth?: number
   cursorHeight?: number
   cursorBackgroundColor?: string
+  cursorBlinkSpeed?: number
 }
 
 const randomChars =
@@ -28,6 +29,7 @@ const GlitchTypewriter = ({
   cursorWidth,
   cursorHeight,
   cursorBackgroundColor,
+  cursorBlinkSPeed,
 }: GlitchTypewriterProps) => {
   const sloganRef = useRef<HTMLSpanElement>(null)
   const currentIndex = useRef<number>(0)
@@ -105,6 +107,9 @@ const GlitchTypewriter = ({
             backgroundColor: cursorBackgroundColor
               ? cursorBackgroundColor
               : "aqua",
+            animation: cursorBlinkSpeed
+              ? cursorBlinkSpeed + "s infinite blink"
+              : "0.7s infinite blink",
           }}
         />
       )}
