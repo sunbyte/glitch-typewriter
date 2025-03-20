@@ -3,6 +3,7 @@ import "./GlitchTypewriter.css"
 
 interface GlitchTypewriterProps {
   slogans: string[]
+  delay: number
   color?: string
   fontSize?: number
   fontWeight?: string
@@ -17,6 +18,7 @@ const randomChars =
 
 const GlitchTypewriter = ({
   slogans,
+  delay,
   color,
   fontSize,
   fontWeight,
@@ -72,7 +74,7 @@ const GlitchTypewriter = ({
     }
 
     typewriterEffect()
-    const loop = setInterval(typewriterEffect, 4000)
+    const loop = setInterval(typewriterEffect, delay ? delay : 3000)
     return () => clearInterval(loop)
   }, [])
 
