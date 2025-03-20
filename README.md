@@ -43,7 +43,7 @@ const App = () => {
          showCursor={true}
          cursorWidth={4}
          cursorHeight={18}
-         cursorBackgroundColor="#9997FF"
+         cursorBackgroundColor="aqua"
       />
     </div>
   )
