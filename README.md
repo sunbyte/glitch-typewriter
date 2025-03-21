@@ -35,6 +35,33 @@ const App = () => {
 
   return (
     <div>
+      <GlitchTypewriter slogans={slogans} showCursor />
+    </div>
+  )
+}
+
+export default App
+```
+
+## Customize
+
+To use the `GlitchTypewriter` component in your React project, follow the example below.
+
+```tsx
+import React from 'react'
+import GlitchTypewriter from "./components/glitch-typewriter/GlitchTypewriter"
+
+const App = () => {
+  const slogans = [
+    "sudo apt-get update",
+    "shred -u -n 5 secret.txt",
+    "cat /proc/meminfo",
+    "sudo dpkg -i package.deb",
+    "tar -xvf archive.tar",
+  ]
+
+  return (
+    <div>
       <GlitchTypewriter
          slogans={slogans}
          delay={3000}
