@@ -61,7 +61,6 @@ Use the optional props to customize the `GlitchTypewriter` component:
    cursorBackgroundColor="aqua"
    cursorBlinkSpeed={0.7}
 />
-</div>
 ```
 
 ### Props
