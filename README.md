@@ -163,7 +163,7 @@ The component accepts the following props:
 
 - **Type**: `string`
 - **Default**: `aqua`
-- **Description**: The background color of the blinking cursor. Use any valid CSS color value.
+- **Description**: The background color of the blinking cursor. Use values like "blue", "#FF0000", etc..
 
   ```tsx
   cursorBackgroundColor="green"
