@@ -1,5 +1,6 @@
 .slogan-container {
-    display: inline;
+    display: 'flex';
+    align-items: 'center';
   }
   
   .glitch {
@@ -171,7 +172,7 @@
   
   .cursor {
     display: inline-block;
-    margin-left: 4px;
+    margin-bottom: 20px;
     vertical-align: middle;
   }
   
