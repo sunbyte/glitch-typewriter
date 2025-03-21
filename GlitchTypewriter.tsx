@@ -19,7 +19,7 @@ interface GlitchTypewriterProps {
 const DEFAULT_SLOGAN = "add some slogans..."
 const DEFAULT_DELAY = 3000
 const DEFAULT_TYPE_SPEED = 15
-const DEFAULT_COLOR = "aqua"
+const DEFAULT_COLOR = "black"
 const DEFAULT_FONT_SIZE = 18
 const DEFAULT_FONT_WEIGHT = "normal"
 const DEFAULT_FONT_FAMILY = "inherit"
