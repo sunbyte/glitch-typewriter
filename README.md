@@ -18,7 +18,7 @@ import GlitchTypewriter from './components/glitch-typewriter/GlitchTypewriter'
 
 ## Usage
 
-To use the `GlitchTypewriter` component in your React project, follow the example below.
+To use the `GlitchTypewriter` component in your React project, follow the example below:
 
 ```tsx
 import React from 'react'
@@ -45,7 +45,7 @@ export default App
 
 ## Customize
 
-To use the `GlitchTypewriter` component in your React project, follow the example below.
+To customize the `GlitchTypewriter` component in your React project, follow the example below:
 
 ```tsx
 import React from 'react'
