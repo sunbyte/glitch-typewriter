@@ -173,7 +173,7 @@ The component accepts the following props:
 
 - **Type**: `number`
 - **Default**: `0.7`
-- **Description**: Cursos blink speed in seconds.
+- **Description**: Cursor blink speed in seconds.
 
   ```tsx
   cursorBlinkSpeed={0.5}
