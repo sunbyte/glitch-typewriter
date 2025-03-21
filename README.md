@@ -83,7 +83,7 @@ The component accepts the following props:
 
 - **Type**: `number`
 - **Default**: `3000`
-- **Description**: Delay time between slogans in milliseconds.
+- **Description**: Time delay between slogans in milliseconds.
 
   ```tsx
   delay="5000"
