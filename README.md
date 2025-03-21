@@ -45,39 +45,23 @@ export default App
 
 ## Customize
 
-To customize the `GlitchTypewriter` component in your React project, follow the example below:
+Use the optional props to customize the `GlitchTypewriter` component:
 
 ```tsx
-import React from 'react'
-import GlitchTypewriter from "./components/glitch-typewriter/GlitchTypewriter"
-
-const App = () => {
-  const slogans = [
-    "sudo apt-get update",
-    "shred -u -n 5 secret.txt",
-    "cat /proc/meminfo",
-    "sudo dpkg -i package.deb",
-    "tar -xvf archive.tar",
-  ]
-
-  return (
-    <div>
-      <GlitchTypewriter
-         slogans={slogans}
-         delay={3000}
-         typeSpeed={15}
-         color="black"
-         fontSize={24}
-         fontWeight="bold"
-         showCursor={true}
-         cursorWidth={4}
-         cursorHeight={18}
-         cursorBackgroundColor="aqua"
-         cursorBlinkSpeed={0.7}
-      />
-    </div>
-  )
-}
+<GlitchTypewriter
+   slogans={slogans}
+   delay={3000}
+   typeSpeed={15}
+   color="black"
+   fontSize={24}
+   fontWeight="bold"
+   showCursor={true}
+   cursorWidth={4}
+   cursorHeight={18}
+   cursorBackgroundColor="aqua"
+   cursorBlinkSpeed={0.7}
+/>
+</div>
 
 export default App
 ```
