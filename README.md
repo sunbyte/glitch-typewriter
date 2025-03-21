@@ -62,8 +62,6 @@ Use the optional props to customize the `GlitchTypewriter` component:
    cursorBlinkSpeed={0.7}
 />
 </div>
-
-export default App
 ```
 
 ### Props
