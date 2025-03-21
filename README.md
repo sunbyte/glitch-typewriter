@@ -6,9 +6,8 @@ A dynamic and futuristic **glitch typewriter** effect component for React. It di
 - [Usage](#usage)
 - [Customize](#customize)
 - [Props](#props)
+- [Demo](#demo)
 - [Inspired by](#inspired-by)
-
-![Demo](demo.gif)
 
 ## Installation
 
@@ -197,6 +196,9 @@ The component accepts the following props:
   ```tsx
   cursorBlinkSpeed={0.5}
   ```
+
+## Demo
+![Demo](demo.gif)
   
 ## Inspired by
 The Hacker News - https://thehackernews.com
