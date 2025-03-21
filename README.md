@@ -55,13 +55,14 @@ Use the optional props to customize the `GlitchTypewriter` component:
    typeSpeed={15}
    color="black"
    fontSize={18}
-   fontWeight="bold"
+   fontWeight="normal"
    fontFamily="inherit"
    showCursor={true}
    cursorWidth={4}
    cursorHeight={18}
    cursorBackgroundColor="aqua"
    cursorBlinkSpeed={0.7}
+   cursorMarginLeft={4}
 />
 ```
 
@@ -138,7 +139,7 @@ The component accepts the following props:
 - **Description**: The font family of the text. Use values like `"Roboto"`, `"Arial, sans-serif"`, etc.
 
   ```tsx
-  fontFamily="Roboto"
+  fontFamily="Arial, sans-serif"
   ```
   
 #### `showCursor` (optional)
@@ -189,6 +190,16 @@ The component accepts the following props:
 
   ```tsx
   cursorBlinkSpeed={0.5}
+  ```
+
+#### `cursorMarginLeft` (optional)
+
+- **Type**: `number`
+- **Default**: `4`
+- **Description**: Space between slogans and cursor.
+
+  ```tsx
+  cursorMarginLeft={8}
   ```
   
 ## Inspired by
