@@ -55,7 +55,7 @@ Use the optional props to customize the `GlitchTypewriter` component:
    delay={3000}
    typeSpeed={15}
    color="black"
-   fontSize={24}
+   fontSize={18}
    fontWeight="bold"
    fontFamily="inherit"
    showCursor={true}
