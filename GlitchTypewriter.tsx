@@ -105,7 +105,7 @@ const GlitchTypewriter = ({
     <div className="slogan-container">
       <span
         ref={sloganRef}
-        className="slogan glitch"
+        className="glitch"
         data-text={firstSlogan}
         style={{
           color: color ? color : DEFAULT_COLOR,
