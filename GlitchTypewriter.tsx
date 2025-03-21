@@ -16,6 +16,18 @@ interface GlitchTypewriterProps {
   cursorBlinkSpeed?: number
 }
 
+const DEFAULT_SLOGAN = "add some slogans..."
+const DEFAULT_DELAY = 3000
+const DEFAULT_TYPE_SPEED = 15
+const DEFAULT_COLOR = "aqua"
+const DEFAULT_FONT_SIZE = 18
+const DEFAULT_FONT_WEIGHT = "normal"
+const DEFAULT_FONT_FAMILY = "inherit"
+const DEFAULT_CURSOR_WIDTH = "4"
+const DEFAULT_CURSOR_HEIGHT = "18"
+const DEFAULT_CURSOR_BACKGROUND_COLOR = "aqua"
+const DEFAULT_CURSOR_BLINK_SPEED = "0.7s infinite blink"
+
 const randomChars =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]<>.,;:"
 
@@ -78,16 +90,16 @@ const GlitchTypewriter = ({
             currentIndex.current = (currentIndex.current + 1) % slogans.length
           }
         },
-        typeSpeed ? typeSpeed : 15
+        typeSpeed ? typeSpeed : DEFAULT_TYPE_SPEED
       )
     }
 
     typewriterEffect()
-    const loop = setInterval(typewriterEffect, delay ? delay : 3000)
+    const loop = setInterval(typewriterEffect, delay ? delay : DEFAULT_DELAY)
     return () => clearInterval(loop)
   }, [])
 
-  const firstSlogan = slogans.length > 0 ? slogans[0] : ""
+  const firstSlogan = slogans.length > 0 ? slogans[0] : DEFAULT_SLOGAN
 
   return (
     <div className="slogan-container">
@@ -96,10 +108,10 @@ const GlitchTypewriter = ({
         className="slogan glitch"
         data-text={firstSlogan}
         style={{
-          color: color ? color : "black",
-          fontSize: fontSize ? fontSize : 18,
-          fontWeight: fontWeight ? fontWeight : "normal",
-          fontFamily: fontFamily ? fontFamily : "inherit",
+          color: color ? color : DEFAULT_COLOR,
+          fontSize: fontSize ? fontSize : DEFAULT_FONT_SIZE,
+          fontWeight: fontWeight ? fontWeight : DEFAULT_FONT_WEIGHT,
+          fontFamily: fontFamily ? fontFamily : DEFAULT_FONT_FAMILY,
         }}
       >
         {firstSlogan}
@@ -108,14 +120,14 @@ const GlitchTypewriter = ({
         <div
           className="cursor"
           style={{
-            width: cursorWidth ? cursorWidth : 4,
-            height: cursorHeight ? cursorHeight : 18,
+            width: cursorWidth ? cursorWidth : DEFAULT_CURSOR_WIDTH,
+            height: cursorHeight ? cursorHeight : DEFAULT_CURSOR_HEIGHT,
             backgroundColor: cursorBackgroundColor
               ? cursorBackgroundColor
-              : "aqua",
+              : DEFAULT_CURSOR_BACKGROUND_COLOR,
             animation: cursorBlinkSpeed
               ? cursorBlinkSpeed + "s infinite blink"
-              : "0.7s infinite blink",
+              : DEFAULT_CURSOR_BLINK_SPEED,
           }}
         />
       )}
