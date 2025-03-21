@@ -23,7 +23,6 @@ import GlitchTypewriter from './components/glitch-typewriter/GlitchTypewriter'
 To use the `GlitchTypewriter` component in your React project, follow the example below:
 
 ```tsx
-import React from 'react'
 import GlitchTypewriter from "./components/glitch-typewriter/GlitchTypewriter"
 
 const App = () => {
