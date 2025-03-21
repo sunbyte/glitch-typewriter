@@ -50,19 +50,18 @@ Use the optional props to customize the `GlitchTypewriter` component:
 
 ```tsx
 <GlitchTypewriter
-   slogans={slogans}
-   delay={3000}
-   typeSpeed={15}
-   color="black"
-   fontSize={18}
-   fontWeight="normal"
-   fontFamily="inherit"
-   showCursor={true}
-   cursorWidth={4}
-   cursorHeight={18}
-   cursorBackgroundColor="aqua"
-   cursorBlinkSpeed={0.7}
-   cursorMarginLeft={4}
+  slogans={slogans}
+  delay={3000}
+  typeSpeed={15}
+  color="white"
+  fontSize={50}
+  fontWeight="bold"
+  showCursor={true}
+  cursorWidth={8}
+  cursorHeight={50}
+  cursorBackgroundColor="aqua"
+  cursorBlinkSpeed={0.7}
+  cursorMarginLeft={10}
 />
 ```
 
