@@ -14,6 +14,7 @@ interface GlitchTypewriterProps {
   cursorHeight?: number
   cursorBackgroundColor?: string
   cursorBlinkSpeed?: number
+  cursorMarginLeft?: number
 }
 
 const DEFAULT_SLOGAN = "add some slogans..."
@@ -27,6 +28,7 @@ const DEFAULT_CURSOR_WIDTH = 4
 const DEFAULT_CURSOR_HEIGHT = 18
 const DEFAULT_CURSOR_BACKGROUND_COLOR = "aqua"
 const DEFAULT_CURSOR_BLINK_SPEED = "0.7s infinite blink"
+const DEFAULT_CURSOR_MARGIN_LEFT = 4
 
 const randomChars =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]<>.,;:"
@@ -44,6 +46,7 @@ const GlitchTypewriter = ({
   cursorHeight,
   cursorBackgroundColor,
   cursorBlinkSpeed,
+  cursorMarginLeft,
 }: GlitchTypewriterProps) => {
   const sloganRef = useRef<HTMLSpanElement>(null)
   const currentIndex = useRef<number>(0)
@@ -128,6 +131,9 @@ const GlitchTypewriter = ({
             animation: cursorBlinkSpeed
               ? cursorBlinkSpeed + "s infinite blink"
               : DEFAULT_CURSOR_BLINK_SPEED,
+            marginLeft: cursorMarginLeft
+              ? cursorMarginLeft
+              : DEFAULT_CURSOR_MARGIN_LEFT,
           }}
         />
       )}
