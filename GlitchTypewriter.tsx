@@ -3,11 +3,12 @@ import "./GlitchTypewriter.css"
 
 interface GlitchTypewriterProps {
   slogans: string[]
-  delay: number
-  typeSpeed: number
+  delay?: number
+  typeSpeed?: number
   color?: string
   fontSize?: number
   fontWeight?: string
+  fontFamily?: string
   showCursor?: boolean
   cursorWidth?: number
   cursorHeight?: number
@@ -25,11 +26,12 @@ const GlitchTypewriter = ({
   color,
   fontSize,
   fontWeight,
+  fontFamily,
   showCursor,
   cursorWidth,
   cursorHeight,
   cursorBackgroundColor,
-  cursorBlinkSPeed,
+  cursorBlinkSpeed,
 }: GlitchTypewriterProps) => {
   const sloganRef = useRef<HTMLSpanElement>(null)
   const currentIndex = useRef<number>(0)
@@ -56,25 +58,28 @@ const GlitchTypewriter = ({
       const textLength = currentText.length
       let currentChar = 0
 
-      const interval = setInterval(() => {
-        const displayText = [...currentText]
-          .map((char, index) =>
-            index < currentChar
-              ? char
-              : randomChars[getRandomIndex(randomChars.length)]
-          )
-          .join("")
+      const interval = setInterval(
+        () => {
+          const displayText = [...currentText]
+            .map((char, index) =>
+              index < currentChar
+                ? char
+                : randomChars[getRandomIndex(randomChars.length)]
+            )
+            .join("")
 
-        sloganElement.textContent = displayText
-        currentChar++
+          sloganElement.textContent = displayText
+          currentChar++
 
-        if (currentChar > textLength) {
-          clearInterval(interval)
-          toggleClass(sloganElement, "glitch", true)
-          sloganElement.dataset.text = displayText
-          currentIndex.current = (currentIndex.current + 1) % slogans.length
-        }
-      }, typeSpeed ? typeSpeed : 15)
+          if (currentChar > textLength) {
+            clearInterval(interval)
+            toggleClass(sloganElement, "glitch", true)
+            sloganElement.dataset.text = displayText
+            currentIndex.current = (currentIndex.current + 1) % slogans.length
+          }
+        },
+        typeSpeed ? typeSpeed : 15
+      )
     }
 
     typewriterEffect()
@@ -94,6 +99,7 @@ const GlitchTypewriter = ({
           color: color ? color : "black",
           fontSize: fontSize ? fontSize : 18,
           fontWeight: fontWeight ? fontWeight : "normal",
+          fontFamily: fontFamily ? fontFamily : "inherit",
         }}
       >
         {firstSlogan}
