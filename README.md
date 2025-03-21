@@ -128,6 +128,16 @@ The component accepts the following props:
   ```tsx
   fontWeight="bold"
   ```
+
+#### `fontFamily` (optional)
+
+- **Type**: `string`
+- **Default**: `"inherit"`
+- **Description**: The font family of the text. Use values like `"Roboto"`, `"Arial, sans-serif"`, etc.
+
+  ```tsx
+  fontFamily="Roboto"
+  ```
   
 #### `showCursor` (optional)
 
