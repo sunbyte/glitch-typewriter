@@ -195,7 +195,7 @@ The component accepts the following props:
 
 - **Type**: `number`
 - **Default**: `4`
-- **Description**: Space between slogans and cursor.
+- **Description**: Space between slogan and cursor.
 
   ```tsx
   cursorMarginLeft={8}
